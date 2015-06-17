@@ -1,6 +1,6 @@
 # llsif-xp-calculator
 
-A simple calculator to tell you how far your idol is from hitting her Experience ceiling
+A simple command-line calculator written in Python, to tell you how far your idol is from hitting her Experience ceiling in the popular mobile game *Love Live: School Idol Festival*.
 
 ## Usage
 
@@ -17,16 +17,20 @@ Simply call the script, passing in:
 
 1. Normal idol, just scouted at level 9-and-a-bit, how far to unawakened (level 30) XP ceiling?
 
-        python exp.py -u 9 46
+        $ python exp.py -u 9 46
+        You are at level 9/30, you have spent 404, and have 4071 more exp to go
 
 2. Normal idol, freshly awakened, was already sitting at XP ceiling
 
-        python exp.py 30
+        $ python exp.py 30
+        You are at level 30/40, you have spent 4475, and have 3525 more exp to go
 
 3. Typical SR idol, ceiling is at level 60, partially levelled
 
-        python exp.py -r SR -u 26 142
+        $ python exp.py -r SR -u 26 142
+        You are at level 26/60, you have spent 6750, and have 17053 more exp to go
 
 4. Awakened UR idol, partially levelled
 
-        python exp.py -r UR 86 712
+        $ python exp.py -r UR 86 712
+        You are at level 86/100, you have spent 66061, and have 13639 more exp to go
